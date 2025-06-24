@@ -1,147 +1,159 @@
 @media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
   }
-  
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
+  .about-containers {
+    flex-wrap: wrap;
   }
-  
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
+  #contact,
+  #projects,
+  #analytics { /* Added #analytics here to adjust its height for these screens */
+    height: fit-content;
   }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  /* REMOVED: .arrow { display: none; } */
+  .arrow { /* <--- NEW/UPDATED ARROW STYLES */
+      display: block; /* Ensure it's visible */
+      position: static; /* Reset positioning to flow with content */
+      margin: 2rem auto; /* Center horizontally and add vertical spacing */
+      width: 3rem; /* Adjust size for better mobile display */
+      height: 3rem;
+      right: auto; /* Clear specific right positioning */
+      bottom: auto; /* Clear specific bottom positioning */
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+
+  /* Analytics iframe specific adjustments for small screens */
+  .dashboard-container {
+      padding-top: 75%; /* Adjust aspect ratio for potentially taller dashboard on small screens (4:3) or 100% for 1:1*/
+  }
+}
 
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .timeline-container::before {
-      left: 2rem;
-  }
+.timeline-container::before {
+    left: 2rem;
+}
 
-  .timeline-content {
-      width: calc(100% - 4rem);
-      margin-left: 4rem !important;
-      margin-right: 0 !important;
-  }
+.timeline-content {
+    width: calc(100% - 4rem);
+    margin-left: 4rem !important;
+    margin-right: 0 !important;
+}
 
-  .timeline-dot {
-      left: 2rem;
-  }
+.timeline-dot {
+    left: 2rem;
+}
 
-  .timeline-content::before {
-      left: -30px !important;
-      right: auto !important;
-      border-right-color: white !important;
-      border-left: 0 !important;
-  }
+.timeline-content::before {
+    left: -30px !important;
+    right: auto !important;
+    border-right-color: white !important;
+    border-left: 0 !important;
+}
 }
 
 @media screen and (max-width: 480px) {
-  .timeline-content {
-      padding: 1.5rem;
-      width: calc(100% - 3rem);
-      margin-left: 3rem !important;
-  }
-
-  .timeline-container::before {
-      left: 1.5rem;
-  }
-
-  .timeline-dot {
-      left: 1.5rem;
-      width: 16px;
-      height: 16px;
-  }
+.timeline-content {
+    padding: 1.5rem;
+    width: calc(100% - 3rem);
+    margin-left: 3rem !important;
 }
-  
+
+.timeline-container::before {
+    left: 1.5rem;
+}
+
+.timeline-dot {
+    left: 1.5rem;
+    width: 16px;
+    height: 16px;
+}
+}
