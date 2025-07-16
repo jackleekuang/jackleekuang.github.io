@@ -495,7 +495,7 @@ section {
   border-radius: 2rem;
   max-width: 90%;
   height: auto;
-  max-height: 300px;
+  max-height: 400px;
   object-fit: contain;
 }
 
@@ -608,7 +608,7 @@ section {
   }
   
   .project-img {
-    max-height: 250px;
+    max-height: 300px;
   }
 }
 
