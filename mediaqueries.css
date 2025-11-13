@@ -157,3 +157,40 @@
     height: 16px;
 }
 }
+
+@media screen and (max-width: 768px) {
+  /* ...existing styles... */
+  
+  /* Tableau embed adjustments for tablets */
+  .tableau-embed-container {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* ...existing styles... */
+  
+  /* Tableau embed adjustments for mobile */
+  .tableau-embed-container {
+    height: 400px;
+  }
+  
+  /* Adjust carousel indicators for 4 projects */
+  .carousel-indicators {
+    gap: 0.3rem;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* ...existing styles... */
+  
+  /* Further adjustments for very small screens */
+  .tableau-embed-container {
+    height: 350px;
+  }
+}

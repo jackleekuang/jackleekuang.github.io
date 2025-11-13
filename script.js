@@ -7,7 +7,7 @@ function toggleMenu() {
 
 // Carousel functionality
 let currentSlideIndex = 0;
-const totalSlides = 3;
+const totalSlides = 4;
 
 function showSlide(index) {
   const wrapper = document.getElementById('carousel-wrapper');
