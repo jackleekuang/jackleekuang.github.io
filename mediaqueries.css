@@ -55,28 +55,55 @@
   }
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .timeline-container::before {
-      left: 2rem;
-  }
-  
-  .timeline-content {
-      width: calc(100% - 4rem);
-      margin-left: 4rem !important;
-      margin-right: 0 !important;
-  }
-  
-  .timeline-dot {
-      left: 2rem;
-  }
-  
-  .timeline-content::before {
-      left: -30px !important;
-      right: auto !important;
-      border-right-color: white !important;
-      border-left: 0 !important;
-  }
+    left: 2rem;
+}
+
+.timeline-content {
+    width: calc(100% - 4rem);
+    margin-left: 4rem !important;
+    margin-right: 0 !important;
+}
+
+.timeline-dot {
+    left: 2rem;
+}
+
+.timeline-content::before {
+    left: -30px !important;
+    right: auto !important;
+    border-right-color: white !important;
+    border-left: 0 !important;
+}
+
+/* Carousel container adjustments */
+.carousel-container {
+  min-height: 600px;
+}
+
+/* Tableau embed adjustments for tablets */
+.tableau-embed-container {
+  height: 550px;
+}
+
+.project-container:nth-child(4) {
+  min-height: 750px;
+}
+
+.project-container:nth-child(1),
+.project-container:nth-child(2),
+.project-container:nth-child(3) {
+  min-height: 550px;
+  max-height: 550px;
+}
+
+.carousel-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+}
+}
 
 @media screen and (max-width: 600px) {
   #contact,
@@ -131,15 +158,31 @@
   .text-container {
     text-align: justify;
   }
-
+  
   /* Analytics iframe specific adjustments for small screens */
   .dashboard-container {
-      padding-top: 75%; /* Adjust aspect ratio for potentially taller dashboard on small screens (4:3) or 100% for 1:1*/
+      padding-top: 75%;
   }
-
+  
+  /* Carousel container adjustments */
+  .carousel-container {
+    min-height: 550px;
+  }
+  
   /* Tableau embed adjustments for mobile */
   .tableau-embed-container {
-    height: 300px;
+    height: 700px;
+  }
+  
+  .project-container:nth-child(4) {
+    min-height: 900px;
+  }
+  
+  .project-container:nth-child(1),
+  .project-container:nth-child(2),
+  .project-container:nth-child(3) {
+    min-height: 500px;
+    max-height: 500px;
   }
   
   /* Adjust carousel indicators for 4 projects */
@@ -151,32 +194,47 @@
     width: 10px;
     height: 10px;
   }
-}
-
-/* Tableau embed adjustments for tablets */
-.tableau-embed-container {
-  height: 300px;
-}
+  
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.timeline-content {
-    padding: 1.5rem;
-    width: calc(100% - 3rem);
-    margin-left: 3rem !important;
-}
-
-.timeline-container::before {
-    left: 1.5rem;
-}
-
-.timeline-dot {
-    left: 1.5rem;
-    width: 16px;
-    height: 16px;
-}
-
-.tableau-embed-container {
-  height: 300px;
-}
+  .timeline-content {
+      padding: 1.5rem;
+      width: calc(100% - 3rem);
+      margin-left: 3rem !important;
+  }
+  .timeline-container::before {
+      left: 1.5rem;
+  }
+  .timeline-dot {
+      left: 1.5rem;
+      width: 16px;
+      height: 16px;
+  }
+  
+  /* Carousel container adjustments */
+  .carousel-container {
+    min-height: 500px;
+  }
+  
+  /* Very small screens */
+  .tableau-embed-container {
+    height: 800px;
+  }
+  
+  .project-container:nth-child(4) {
+    min-height: 1000px;
+  }
+  
+  .project-container:nth-child(1),
+  .project-container:nth-child(2),
+  .project-container:nth-child(3) {
+    min-height: 450px;
+    max-height: 450px;
+  }
 }
