@@ -79,21 +79,20 @@
 
 /* Carousel container adjustments */
 .carousel-container {
-  min-height: 600px;
+  height: 600px;
 }
 
-/* Tableau embed adjustments for tablets */
 .tableau-embed-container {
   height: 550px;
 }
 
-.project-container:nth-child(4) {
+.project-container:nth-child(1) {
   min-height: 750px;
 }
 
-.project-container:nth-child(1),
 .project-container:nth-child(2),
-.project-container:nth-child(3) {
+.project-container:nth-child(3),
+.project-container:nth-child(4) {
   min-height: 550px;
   max-height: 550px;
 }
@@ -164,23 +163,21 @@
       padding-top: 75%;
   }
   
-  /* Carousel container adjustments */
   .carousel-container {
-    min-height: 550px;
+    height: 550px;
   }
   
-  /* Tableau embed adjustments for mobile */
   .tableau-embed-container {
     height: 700px;
   }
   
-  .project-container:nth-child(4) {
+  .project-container:nth-child(1) {
     min-height: 900px;
   }
   
-  .project-container:nth-child(1),
   .project-container:nth-child(2),
-  .project-container:nth-child(3) {
+  .project-container:nth-child(3),
+  .project-container:nth-child(4) {
     min-height: 500px;
     max-height: 500px;
   }
@@ -217,23 +214,21 @@
       height: 16px;
   }
   
-  /* Carousel container adjustments */
   .carousel-container {
-    min-height: 500px;
+    height: 500px;
   }
   
-  /* Very small screens */
   .tableau-embed-container {
     height: 800px;
   }
   
-  .project-container:nth-child(4) {
+  .project-container:nth-child(1) {
     min-height: 1000px;
   }
   
-  .project-container:nth-child(1),
   .project-container:nth-child(2),
-  .project-container:nth-child(3) {
+  .project-container:nth-child(3),
+  .project-container:nth-child(4) {
     min-height: 450px;
     max-height: 450px;
   }
